@@ -18,7 +18,7 @@ public class Chapter {
 	private String chapterName;
 	@OneToOne
 	@JoinColumn(name = "movie_id")
-	Movie movie;
+	private Movie movie;
 	@Column(name = "movie_chapter")
 	private int movieChapter;
 }

@@ -16,13 +16,13 @@ public class Dialogue {
 	private int dialogueId;
 	@OneToOne
 	@JoinColumn(name="chapter_id")
-	Chapter chapter;
+	private Chapter chapter;
 	@OneToOne
 	@JoinColumn(name="place_id")
-	Place place;
+	private Place place;
 	@OneToOne
 	@JoinColumn(name="character_id")
-	HpCharacter character;
+	private HpCharacter character;
 	@Column(name="dialogue")
 	private String dialogue;
 }
