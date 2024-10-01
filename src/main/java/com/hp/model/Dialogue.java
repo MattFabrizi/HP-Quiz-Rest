@@ -14,12 +14,6 @@ public class Dialogue {
 	@Id
 	@Column(name="dialogue_id")
 	private int dialogueId;
-//	@Column(name="chapter_id")
-//	private int chapterId;
-//	@Column(name="place_id")
-//	private int placeId;
-//	@Column(name="character_id")
-//	private int characterId;
 	@OneToOne
 	@JoinColumn(name="chapter_id")
 	Chapter chapter;

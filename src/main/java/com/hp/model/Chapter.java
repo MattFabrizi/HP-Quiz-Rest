@@ -16,8 +16,6 @@ public class Chapter {
 	private int chapterId;
 	@Column(name = "chapter_name")
 	private String chapterName;
-//	@Column(name = "movie_id")
-//	private int movieId;
 	@OneToOne
 	@JoinColumn(name = "movie_id")
 	Movie movie;

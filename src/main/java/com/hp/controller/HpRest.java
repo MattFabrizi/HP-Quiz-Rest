@@ -21,10 +21,10 @@ import com.hp.repositories.HpCharacterRepository;
 public class HpRest {
 
 	@Autowired
-	HpCharacterRepository hpCharacterRepo;
+	private HpCharacterRepository hpCharacterRepo;
 	
 	@Autowired
-	DialogueRepository dialogueRepo;
+	private DialogueRepository dialogueRepo;
 
 	@GetMapping("/quiz/dialogue")
 	public Optional<Dialogue> getDialogueQuestion() {
